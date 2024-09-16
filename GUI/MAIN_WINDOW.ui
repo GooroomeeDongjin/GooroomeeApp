@@ -6,54 +6,272 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1210</width>
-    <height>550</height>
+    <width>1340</width>
+    <height>580</height>
    </rect>
   </property>
   <property name="minimumSize">
    <size>
-    <width>1210</width>
-    <height>550</height>
+    <width>1340</width>
+    <height>580</height>
    </size>
   </property>
   <property name="maximumSize">
    <size>
-    <width>1210</width>
-    <height>550</height>
+    <width>1340</width>
+    <height>580</height>
    </size>
   </property>
   <property name="windowTitle">
-   <string>구루미 프로그램</string>
+   <string>Gooroomee App</string>
   </property>
   <widget class="QWidget" name="centralwidget">
+   <property name="minimumSize">
+    <size>
+     <width>1340</width>
+     <height>0</height>
+    </size>
+   </property>
    <property name="maximumSize">
     <size>
-     <width>1280</width>
+     <width>1340</width>
      <height>550</height>
     </size>
    </property>
-   <widget class="QWidget" name="">
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>1331</width>
+      <height>551</height>
+     </rect>
+    </property>
     <layout class="QGridLayout" name="gridLayout_2">
      <property name="spacing">
       <number>3</number>
      </property>
-     <item row="1" column="0">
-      <spacer name="horizontalSpacer_3">
-       <property name="orientation">
-        <enum>Qt::Horizontal</enum>
+     <item row="1" column="3">
+      <layout class="QGridLayout" name="gridLayout_4">
+       <property name="spacing">
+        <number>1</number>
        </property>
-       <property name="sizeHint" stdset="0">
-        <size>
-         <width>5</width>
-         <height>20</height>
-        </size>
-       </property>
-      </spacer>
+       <item row="0" column="0">
+        <layout class="QHBoxLayout" name="horizontalLayout_7">
+         <item>
+          <layout class="QVBoxLayout" name="verticalLayout_2">
+           <item>
+            <widget class="QLabel" name="label_stat">
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>0</height>
+              </size>
+             </property>
+             <property name="baseSize">
+              <size>
+               <width>0</width>
+               <height>0</height>
+              </size>
+             </property>
+             <property name="frameShape">
+              <enum>QFrame::NoFrame</enum>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="reference_image_view">
+             <property name="minimumSize">
+              <size>
+               <width>256</width>
+               <height>256</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>256</width>
+               <height>256</height>
+              </size>
+             </property>
+             <property name="frameShape">
+              <enum>QFrame::Box</enum>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <widget class="QLabel" name="label_log">
+           <property name="minimumSize">
+            <size>
+             <width>400</width>
+             <height>360</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>400</width>
+             <height>360</height>
+            </size>
+           </property>
+           <property name="baseSize">
+            <size>
+             <width>280</width>
+             <height>360</height>
+            </size>
+           </property>
+           <property name="frameShape">
+            <enum>QFrame::Box</enum>
+           </property>
+           <property name="text">
+            <string/>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignTop</set>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item row="3" column="0">
+        <layout class="QHBoxLayout" name="horizontalLayout_2">
+         <item>
+          <widget class="QLabel" name="label_6">
+           <property name="text">
+            <string>reference image</string>
+           </property>
+           <property name="margin">
+            <number>10</number>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLineEdit" name="lineEdit_search_reference_image">
+           <property name="enabled">
+            <bool>false</bool>
+           </property>
+           <property name="readOnly">
+            <bool>true</bool>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="button_search_reference_image">
+           <property name="enabled">
+            <bool>false</bool>
+           </property>
+           <property name="text">
+            <string>...</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item row="4" column="0">
+        <spacer name="verticalSpacer_9">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>40</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item row="5" column="0">
+        <layout class="QHBoxLayout" name="horizontalLayout_3">
+         <item>
+          <widget class="QPushButton" name="button_send_keyframe">
+           <property name="text">
+            <string>Send KeyFrame</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="button_request_keyframe">
+           <property name="text">
+            <string>Request KeyFrame</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <spacer name="horizontalSpacer_4">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>40</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item>
+          <widget class="QPushButton" name="button_exit">
+           <property name="text">
+            <string>Exit</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item row="2" column="0">
+        <layout class="QHBoxLayout" name="horizontalLayout_4">
+         <property name="leftMargin">
+          <number>10</number>
+         </property>
+         <item>
+          <widget class="QCheckBox" name="checkBox_use_reference_image">
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>30</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>16777215</width>
+             <height>30</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>use reference image</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
      </item>
      <item row="1" column="1">
       <layout class="QGridLayout" name="gridLayout">
-       <item row="1" column="0">
-        <spacer name="verticalSpacer">
+       <item row="10" column="0">
+        <widget class="QComboBox" name="comboBox_spk_device">
+         <property name="minimumSize">
+          <size>
+           <width>320</width>
+           <height>25</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>320</width>
+           <height>25</height>
+          </size>
+         </property>
+        </widget>
+       </item>
+       <item row="5" column="0">
+        <spacer name="verticalSpacer_3">
          <property name="orientation">
           <enum>Qt::Vertical</enum>
          </property>
@@ -68,43 +286,8 @@
          </property>
         </spacer>
        </item>
-       <item row="14" column="0">
-        <spacer name="verticalSpacer_6">
-         <property name="orientation">
-          <enum>Qt::Vertical</enum>
-         </property>
-         <property name="sizeType">
-          <enum>QSizePolicy::Maximum</enum>
-         </property>
-         <property name="sizeHint" stdset="0">
-          <size>
-           <width>20</width>
-           <height>20</height>
-          </size>
-         </property>
-        </spacer>
-       </item>
-       <item row="0" column="0">
-        <widget class="QPushButton" name="create_button">
-         <property name="minimumSize">
-          <size>
-           <width>320</width>
-           <height>35</height>
-          </size>
-         </property>
-         <property name="maximumSize">
-          <size>
-           <width>320</width>
-           <height>35</height>
-          </size>
-         </property>
-         <property name="text">
-          <string>생성</string>
-         </property>
-        </widget>
-       </item>
-       <item row="10" column="0">
-        <widget class="QComboBox" name="comboBox_audio_device">
+       <item row="7" column="0">
+        <widget class="QComboBox" name="comboBox_camera_device">
          <property name="minimumSize">
           <size>
            <width>320</width>
@@ -135,6 +318,22 @@
          </property>
         </spacer>
        </item>
+       <item row="1" column="0">
+        <spacer name="verticalSpacer">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeType">
+          <enum>QSizePolicy::Maximum</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>10</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
        <item row="6" column="0">
         <widget class="QLabel" name="label">
          <property name="minimumSize">
@@ -150,10 +349,88 @@
           </size>
          </property>
          <property name="text">
-          <string>비디오</string>
+          <string>Camera Select</string>
          </property>
          <property name="alignment">
           <set>Qt::AlignBottom|Qt::AlignLeading|Qt::AlignLeft</set>
+         </property>
+        </widget>
+       </item>
+       <item row="15" column="0">
+        <layout class="QVBoxLayout" name="verticalLayout">
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_6">
+           <item>
+            <spacer name="horizontalSpacer_6">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>40</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item>
+            <widget class="QLabel" name="preview">
+             <property name="minimumSize">
+              <size>
+               <width>180</width>
+               <height>180</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>180</width>
+               <height>180</height>
+              </size>
+             </property>
+             <property name="frameShape">
+              <enum>QFrame::Box</enum>
+             </property>
+             <property name="text">
+              <string/>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <spacer name="horizontalSpacer_7">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>40</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </item>
+       <item row="4" column="0">
+        <widget class="QPushButton" name="room_information_button">
+         <property name="minimumSize">
+          <size>
+           <width>320</width>
+           <height>35</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>320</width>
+           <height>35</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>Room Information</string>
+         </property>
+         <property name="checkable">
+          <bool>false</bool>
          </property>
         </widget>
        </item>
@@ -172,66 +449,12 @@
           </size>
          </property>
          <property name="text">
-          <string>입장</string>
+          <string>Channel Join</string>
          </property>
         </widget>
        </item>
-       <item row="4" column="0">
-        <widget class="QPushButton" name="room_information_button">
-         <property name="minimumSize">
-          <size>
-           <width>320</width>
-           <height>35</height>
-          </size>
-         </property>
-         <property name="maximumSize">
-          <size>
-           <width>320</width>
-           <height>35</height>
-          </size>
-         </property>
-         <property name="text">
-          <string>방정보</string>
-         </property>
-         <property name="checkable">
-          <bool>false</bool>
-         </property>
-        </widget>
-       </item>
-       <item row="5" column="0">
-        <spacer name="verticalSpacer_3">
-         <property name="orientation">
-          <enum>Qt::Vertical</enum>
-         </property>
-         <property name="sizeType">
-          <enum>QSizePolicy::Maximum</enum>
-         </property>
-         <property name="sizeHint" stdset="0">
-          <size>
-           <width>20</width>
-           <height>10</height>
-          </size>
-         </property>
-        </spacer>
-       </item>
-       <item row="7" column="0">
-        <widget class="QComboBox" name="comboBox_video_device">
-         <property name="minimumSize">
-          <size>
-           <width>320</width>
-           <height>25</height>
-          </size>
-         </property>
-         <property name="maximumSize">
-          <size>
-           <width>320</width>
-           <height>25</height>
-          </size>
-         </property>
-        </widget>
-       </item>
-       <item row="8" column="0">
-        <spacer name="verticalSpacer_4">
+       <item row="3" column="0">
+        <spacer name="verticalSpacer_2">
          <property name="orientation">
           <enum>Qt::Vertical</enum>
          </property>
@@ -261,7 +484,7 @@
           </size>
          </property>
          <property name="text">
-          <string>스피커</string>
+          <string>Speaker Select</string>
          </property>
          <property name="alignment">
           <set>Qt::AlignBottom|Qt::AlignLeading|Qt::AlignLeft</set>
@@ -269,7 +492,7 @@
         </widget>
        </item>
        <item row="13" column="0">
-        <widget class="QComboBox" name="comboBox_mic">
+        <widget class="QComboBox" name="comboBox_mic_device">
          <property name="minimumSize">
           <size>
            <width>320</width>
@@ -283,22 +506,6 @@
           </size>
          </property>
         </widget>
-       </item>
-       <item row="3" column="0">
-        <spacer name="verticalSpacer_2">
-         <property name="orientation">
-          <enum>Qt::Vertical</enum>
-         </property>
-         <property name="sizeType">
-          <enum>QSizePolicy::Maximum</enum>
-         </property>
-         <property name="sizeHint" stdset="0">
-          <size>
-           <width>20</width>
-           <height>10</height>
-          </size>
-         </property>
-        </spacer>
        </item>
        <item row="12" column="0">
         <widget class="QLabel" name="label_3">
@@ -315,35 +522,60 @@
           </size>
          </property>
          <property name="text">
-          <string>마이크</string>
+          <string>Mic Select</string>
          </property>
         </widget>
        </item>
-       <item row="15" column="0">
-        <layout class="QVBoxLayout" name="verticalLayout">
-         <item>
-          <widget class="QLabel" name="preview">
-           <property name="minimumSize">
-            <size>
-             <width>320</width>
-             <height>180</height>
-            </size>
-           </property>
-           <property name="maximumSize">
-            <size>
-             <width>320</width>
-             <height>180</height>
-            </size>
-           </property>
-           <property name="frameShape">
-            <enum>QFrame::Box</enum>
-           </property>
-           <property name="text">
-            <string/>
-           </property>
-          </widget>
-         </item>
-        </layout>
+       <item row="0" column="0">
+        <widget class="QPushButton" name="create_button">
+         <property name="minimumSize">
+          <size>
+           <width>320</width>
+           <height>35</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>320</width>
+           <height>35</height>
+          </size>
+         </property>
+         <property name="text">
+          <string>Channel Create</string>
+         </property>
+        </widget>
+       </item>
+       <item row="14" column="0">
+        <spacer name="verticalSpacer_6">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeType">
+          <enum>QSizePolicy::Maximum</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item row="8" column="0">
+        <spacer name="verticalSpacer_4">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeType">
+          <enum>QSizePolicy::Maximum</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>10</height>
+          </size>
+         </property>
+        </spacer>
        </item>
       </layout>
      </item>
@@ -354,104 +586,24 @@
        </property>
        <property name="sizeHint" stdset="0">
         <size>
-         <width>5</width>
+         <width>2</width>
          <height>20</height>
         </size>
        </property>
       </spacer>
      </item>
-     <item row="1" column="3">
-      <layout class="QGridLayout" name="gridLayout_4">
-       <property name="spacing">
-        <number>1</number>
+     <item row="1" column="0">
+      <spacer name="horizontalSpacer_3">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
        </property>
-       <item row="0" column="0">
-        <spacer name="verticalSpacer_10">
-         <property name="orientation">
-          <enum>Qt::Vertical</enum>
-         </property>
-         <property name="sizeHint" stdset="0">
-          <size>
-           <width>20</width>
-           <height>40</height>
-          </size>
-         </property>
-        </spacer>
-       </item>
-       <item row="2" column="0">
-        <spacer name="verticalSpacer_9">
-         <property name="orientation">
-          <enum>Qt::Vertical</enum>
-         </property>
-         <property name="sizeHint" stdset="0">
-          <size>
-           <width>20</width>
-           <height>20</height>
-          </size>
-         </property>
-        </spacer>
-       </item>
-       <item row="1" column="0">
-        <widget class="QLabel" name="main_view">
-         <property name="minimumSize">
-          <size>
-           <width>640</width>
-           <height>360</height>
-          </size>
-         </property>
-         <property name="maximumSize">
-          <size>
-           <width>640</width>
-           <height>360</height>
-          </size>
-         </property>
-         <property name="frameShape">
-          <enum>QFrame::Box</enum>
-         </property>
-         <property name="text">
-          <string/>
-         </property>
-        </widget>
-       </item>
-       <item row="3" column="0">
-        <layout class="QHBoxLayout" name="horizontalLayout_3">
-         <item>
-          <widget class="QPushButton" name="button_send_keyframe">
-           <property name="text">
-            <string>Send KeyFrame</string>
-           </property>
-          </widget>
-         </item>
-         <item>
-          <widget class="QPushButton" name="button_change_avatar">
-           <property name="text">
-            <string>Change Avatar</string>
-           </property>
-          </widget>
-         </item>
-         <item>
-          <spacer name="horizontalSpacer_4">
-           <property name="orientation">
-            <enum>Qt::Horizontal</enum>
-           </property>
-           <property name="sizeHint" stdset="0">
-            <size>
-             <width>40</width>
-             <height>20</height>
-            </size>
-           </property>
-          </spacer>
-         </item>
-         <item>
-          <widget class="QPushButton" name="button_exit">
-           <property name="text">
-            <string>종료</string>
-           </property>
-          </widget>
-         </item>
-        </layout>
-       </item>
-      </layout>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>2</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
      </item>
      <item row="1" column="5">
       <layout class="QGridLayout" name="gridLayout_11">
@@ -495,7 +647,7 @@
             </size>
            </property>
            <property name="text">
-            <string>전송</string>
+            <string>Send</string>
            </property>
           </widget>
          </item>
@@ -504,7 +656,7 @@
        <item row="3" column="0">
         <widget class="QLabel" name="label_5">
          <property name="text">
-          <string>  메시지</string>
+          <string>Chat Message</string>
          </property>
         </widget>
        </item>
@@ -523,7 +675,7 @@
           </size>
          </property>
          <property name="text">
-          <string>  접속 사용자</string>
+          <string>Join Uesr List</string>
          </property>
          <property name="alignment">
           <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
@@ -597,7 +749,20 @@
        </property>
        <property name="sizeHint" stdset="0">
         <size>
-         <width>5</width>
+         <width>2</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item row="1" column="6">
+      <spacer name="horizontalSpacer_8">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>2</width>
          <height>20</height>
         </size>
        </property>
